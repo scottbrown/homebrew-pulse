@@ -12,7 +12,7 @@ class Pulse < Formula
   version VERSION
 
   def self.prefix
-    "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}_"
+    "#{REPO}/releases/download/v#{VERSION}/#{PACKAGE}"
   end
 
   on_macos do
