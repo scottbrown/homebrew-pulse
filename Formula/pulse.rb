@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-VERSION = '1.1.1'
+VERSION = '1.2.0'
 PACKAGE = 'pulse'
 REPO = "https://github.com/scottbrown/#{PACKAGE}"
 
@@ -18,20 +18,20 @@ class Pulse < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "#{prefix}-darwin-arm64.tar.gz"
-      sha256 '725eda45360f609e533795c344b5ba9b76ae94f35b15445bca05e17cc7fed3f7'
+      sha256 '046c0aadddeccaf86c60508b68b201084f9af5aa60e61104873a3423755347ae'
     else
       url "#{prefix}-darwin-amd64.tar.gz"
-      sha256 'e0e0747d4688cf42244e19ee6563e557ceabc8dbdf51f6c1c931190b54ab0e8e'
+      sha256 'b0aa87f783fb9e0470502075bdd712851bc43054a96228c75a70dacf157c2b2c'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "#{prefix}-linux-arm64.tar.gz"
-      sha256 'f3f6ad17e497aa19b5ffb76752b02db85cbfb733d45cc873d6830eabdba9e9c6'
+      sha256 'f5f29a98c6c0ba7988261f818f08d5fb3d46bbf5c23aba3c45d5a970705401bb'
     else
       url "#{prefix}-linux-amd64.tar.gz"
-      sha256 '22d347c260d4b7c9f48f4cf8fd5e5a900b3dc2951ecac569715ca7c5494f06b3'
+      sha256 'bc5d2ee852e4c213a3b287f84e757099dfe15db3853c7afdfa3bed437b570fcf'
     end
   end
 
